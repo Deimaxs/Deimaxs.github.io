@@ -14,6 +14,8 @@
     <title>Mateo - Mi portafolio</title>
 
     <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <!-- https://cutesolution.com/html/lavina/ -->
 
@@ -213,60 +215,75 @@
         <div>
             <div class="grid grid-rows-2 grid-cols-3 gap-8 p-10">
                 <div class="relative">
-                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal()">
+                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_vision')">
                         <img src="imagenes/vision.jpg" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width:100%">
                         <div class="image-overlay-middle w-11/12 h-5/6">
                             <div class="image-overlay-text">
-                                <p class="text-zinc-300 font-bold">Conteo y seguimiento de objetos con visión artificial</p>
+                                <p class="text-zinc-200 font-bold">Conteo y seguimiento de objetos con visión artificial</p>
                                 <br>
-                                <p class="text-white text-sm tracking-tight">Un proyecto de computer vision enfocado al conteo y clasificacion de objetos en videos.
-                                    El objetivo del proyecto es realizar una API en la Google Cloud Platform (GCP), la cual recibe un video codificado en base64 y aplicará en
-                                    él un modelo de seguimiento de direccion de objetos a traves de un umbral o un modelo de conteo de objetos.
-                                    </p>
+                                <ul class="text-zinc-300 font-bold">
+                                    <li>Docker</li>
+                                    <li>GCP</li>
+                                    <li>TensorFlow</li>
+                                    <li>OpenCV</li>
+                                    <li>DLib</li>
+                                    <li>FastAPI</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal()">
+                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_ocr')">
                         <img src="imagenes/OCR.JPG" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width:100%">
                         <div class="image-overlay-middle w-11/12 h-5/6">
                             <div class="image-overlay-text">
-                                <p class="text-zinc-300 font-bold">OCR con comunicación a la base de datos y presentación de resultados.</p>
+                                <p class="text-zinc-200 font-bold">OCR con comunicación a la base de datos y presentación de resultados.</p>
                                 <br>
-                                <p class="text-white text-sm tracking-tight">Programa que recopila la información de fotografías de facturas, envía los registros a BigQuery y 
-                                    genera el dashboard en tiempo real.
-                                    El objetivo del proyecto es realizar un dashboard que recopila la información de una base de datos en Google BigQuery. El usuario
-                                    selecciona las fotografías de las facturas de compra por medio de la GUI, la cual realiza el reconocimiento y los comunica por 
-                                    medio de la API de google a BigQuery.</p>
+                                <p class="text-white text-sm tracking-tight">
+                                    <ul class="text-zinc-300 font-bold">
+                                        <li>Python</li>
+                                        <li>Google BigQuery</li>
+                                        <li>Looker Studio</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal()">
+                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_cluster')">
                         <img src="imagenes/cluster.JPG" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width:100%">
                         <div class="image-overlay-middle w-11/12 h-5/6">
                             <div class="image-overlay-text">
-                                <p class="text-zinc-300 font-bold">Análisis de anomalías por medio de clustering.</p>
+                                <p class="text-zinc-200 font-bold">Análisis de anomalías por medio de clustering.</p>
                                 <br>
-                                <p class="text-white text-sm tracking-tight">El proyecto consiste en realizar la limpieza, procesamiento y análisis de un conjunto de datos 
-                                    producto de controles medio ambientales aleatorios a vehículos de combustión interna en carreteras y autopistas, con el fin de corroborar 
-                                    los resultados obtenidos en la Inspección Técnica de Vehículos (ITV - En España) o Revisión técnico-mecánica (En Latinoamérica) y poder 
-                                    determinar conductas fraudulentas por parte de las empresas que certifican dichos procesos.</p>
+                                <p class="text-white text-sm tracking-tight">
+                                    <ul class="text-zinc-300 font-bold">
+                                        <li>Pandas</li>
+                                        <li>Scikit-Learn</li>
+                                        <li>Matplotlib</li>
+                                        <li>Seaborn</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal()">
+                    <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_clasification')">
                         <img src="imagenes/clasification.png" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width:100%">
                         <div class="image-overlay-middle w-11/12 h-5/6">
                             <div class="image-overlay-text">
-                                <p class="text-zinc-300 font-bold">Generación de modelos de clasificación en aprendizaje supervisado.</p>
+                                <p class="text-zinc-200 font-bold">Generación de modelos de clasificación en aprendizaje supervisado.</p>
                                 <br>
-                                <p class="text-white text-sm tracking-tight">Generación de modelo de machine learning para la clasificación de clientes con riesgo de churn en
-                                     el sector telecomunicaciones.
+                                <p class="text-white text-sm tracking-tight">
+                                    <ul class="text-zinc-300 font-bold">
+                                        <li>Scikit-Learn</li>
+                                        <li>Imblearn</li>
+                                        <li>Flask</li>
+                                        <li>Pickle</li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -294,27 +311,224 @@
                         <input type="text" class="w-full bg-zinc-800 p-2 mt-2 mb-3" />
                         <label>Mensaje:</label>
                         <textarea rows="10" class="w-full bg-zinc-800 p-2 mt-2 mb-3"></textarea>
-                        <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal()"><i class="fas fa-times"></i> Enviar</button>
+                        <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"><i class="fas fa-times"></i> Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+    <!-- Modals -->
+    <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal hidden" id="modal_vision">
         <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div class="fixed inset-0 transition-opacity">
-                <div class="absolute inset-0 bg-gray-900 opacity-75" />
-            </div>
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
             <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-6xl sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                    <video width="640" height="480" class="self-auto" controls>
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
+                    <video width="640" height="480" class="w-1/2 h-3/4 self-auto" controls>
                       <source src="video1.mp4">
                     </video>
-                    <div class="bg-gray-200 px-4 py-3 text-right">
-                        <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal()"><i class="fas fa-times"></i> Close</button>
+                    <div class="pl-16 w-1/2 text-gray-800 text-justify">
+                        Un proyecto de computer vision enfocado al conteo y clasificacion de objetos en videos.
+                        El objetivo del proyecto es realizar una API en la Google Cloud Platform (GCP), la cual recibe un video codificado en base64 y aplicará en
+                        él un modelo de seguimiento de direccion de objetos a traves de un umbral o un modelo de conteo de objetos.
                     </div>
+                </div>
+                <div class="bg-gray-200 px-4 py-3 text-right">
+                    <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal('modal_vision')"><i class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal hidden" id="modal_ocr">
+        <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-900 opacity-75" />
+            </div> -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-6xl sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
+                    <div id="carouselExampleControls" class="w-1/2 h-3/4 self-auto carousel slide relative" data-bs-ride="carousel">
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                          <div class="carousel-item active relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                              class="block w-full"
+                              alt="Wild Landscape"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                              class="block w-full"
+                              alt="Camera"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                              class="block w-full"
+                              alt="Exotic Fruits"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="pl-16 w-1/2 text-gray-800 text-justify">
+                        Programa que recopila la información de fotografías de facturas, envía los registros a BigQuery y 
+                        genera el dashboard en tiempo real.
+                        El objetivo del proyecto es realizar un dashboard que recopila la información de una base de datos en Google BigQuery. El usuario
+                        selecciona las fotografías de las facturas de compra por medio de la GUI, la cual realiza el reconocimiento y los comunica por 
+                        medio de la API de google a BigQuery.
+                    </div>
+                </div>
+                <div class="bg-gray-200 px-4 py-3 text-right">
+                    <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal('modal_ocr')"><i class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal hidden" id="modal_cluster">
+        <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-900 opacity-75" />
+            </div> -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-6xl sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
+                    <div id="carouselExampleControls" class="w-1/2 h-3/4 self-auto carousel slide relative" data-bs-ride="carousel">
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                          <div class="carousel-item active relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                              class="block w-full"
+                              alt="Wild Landscape"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                              class="block w-full"
+                              alt="Camera"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                              class="block w-full"
+                              alt="Exotic Fruits"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="pl-16 w-1/2 text-gray-800 text-justify">
+                        El proyecto consiste en realizar la limpieza, procesamiento y análisis de un conjunto de datos 
+                        producto de controles medio ambientales aleatorios a vehículos de combustión interna en carreteras y autopistas, con el fin de corroborar 
+                        los resultados obtenidos en la Inspección Técnica de Vehículos (ITV - En España) o Revisión técnico-mecánica (En Latinoamérica) y poder 
+                        determinar conductas fraudulentas por parte de las empresas que certifican dichos procesos.
+                    </div>
+                </div>
+                <div class="bg-gray-200 px-4 py-3 text-right">
+                    <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal('modal_cluster')"><i class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal hidden" id="modal_clasification">
+        <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-900 opacity-75" />
+            </div> -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-6xl sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
+                    <div id="carouselExampleControls" class="w-1/2 h-3/4 self-auto carousel slide relative" data-bs-ride="carousel">
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                          <div class="carousel-item active relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                              class="block w-full"
+                              alt="Wild Landscape"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                              class="block w-full"
+                              alt="Camera"
+                            />
+                          </div>
+                          <div class="carousel-item relative float-left w-full">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                              class="block w-full"
+                              alt="Exotic Fruits"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                          type="button"
+                          data-bs-target="#carouselExampleControls"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="pl-16 w-1/2 text-gray-800 text-justify">
+                        Generación de modelo de machine learning para la clasificación de clientes con riesgo de churn en
+                        el sector telecomunicaciones.
+                    </div>
+                </div>
+                <div class="bg-gray-200 px-4 py-3 text-right">
+                    <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onclick="toggleModal('modal_clasification')"><i class="fas fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
@@ -327,5 +541,6 @@
         </button>
   
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
