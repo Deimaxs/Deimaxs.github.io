@@ -24,6 +24,9 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function toggleModal() {
-  document.getElementById('modal').classList.toggle('hidden')
+function toggleModal(modal_id) {
+  console.log(this)
+  console.log(document.getElementById(modal_id).classList)
+  console.log(modal_id)
+  document.getElementById(modal_id).classList.toggle('hidden')
 }
