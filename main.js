@@ -7,10 +7,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 50 ||
-    document.documentElement.scrollTop > 50
-  ) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -25,8 +22,5 @@ function scrollToTop() {
 }
 
 function toggleModal(modal_id) {
-  console.log(this)
-  console.log(document.getElementById(modal_id).classList)
-  console.log(modal_id)
-  document.getElementById(modal_id).classList.toggle('hidden')
+  document.getElementById(modal_id).classList.toggle("hidden");
 }
