@@ -454,6 +454,34 @@
               </div>
             </div>
           </div>
+          <div class="relative">
+            <div
+              class="image-overlay-container h-80 w-80 cursor-hand"
+              onclick="toggleModal('modal_bi')"
+            >
+              <img
+                src="imagenes/bi.jpeg"
+                alt="Avatar"
+                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
+                style="width: 100%"
+              />
+              <div class="image-overlay-middle w-11/12 h-5/6">
+                <div class="image-overlay-text">
+                  <p class="text-zinc-200 font-bold">
+                    BI competición kaggle
+                  </p>
+                  <br />
+                  <!-- <p class="text-white text-sm tracking-tight"> -->
+                  <ul class="text-zinc-300 font-bold">
+                    <li>Pandas</li>
+                    <li>Seaborn</li>
+                    <li>Plotly</li>
+                  </ul>
+                  <!-- </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -532,7 +560,7 @@
               </p>
               <br><hr><br>
               <p>
-                proyecto de computer vision enfocado al conteo y clasificacion
+                Proyecto de computer vision enfocado al conteo y clasificacion
                 de objetos en videos. El objetivo del proyecto es realizar una API
                 en la Google Cloud Platform (GCP), la cual recibe un video
                 codificado en base64 y aplicará en él un modelo de seguimiento de
@@ -936,6 +964,58 @@
               type="button"
               class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
               onclick="toggleModal('modal_clasification')"
+            >
+              <i class="fas fa-times"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal hidden"
+      id="modal_bi"
+    >
+      <div
+        class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          >&#8203;</span
+        >
+        <div
+          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-6xl sm:w-full"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-headline"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
+            <video
+              width="640"
+              height="480"
+              class="w-1/2 h-3/4 self-auto"
+              controls
+            >
+              <source src="video2.mp4" />
+            </video>
+            <div class="pl-16 w-1/2 text-gray-800 text-justify">
+              <p class="text-gray-500 text-center text-xl font-bold">
+                BI competición kaggle
+              </p>
+              <br><hr><br>
+              <p>
+                El proyecto busca realizar la limpieza, procesamiento y análisis de un conjunto de datos producto de las ventas realizadas en una cadena de tiendas a lo largo de Estados Unidos, con el fin de proporcionar información relevante para la toma de decisiones.
+              </p>
+              <br>
+              Github: <a class="hover:text-blue-500 text-cyan-600" href="https://github.com/Deimaxs/BI_analysis_kaggle_competition">
+                https://github.com/Deimaxs/BI_analysis_kaggle_competition
+              </a>
+            </div>
+          </div>
+          <div class="bg-gray-200 px-4 py-3 text-right">
+            <button
+              type="button"
+              class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
+              onclick="toggleModal('modal_vision')"
             >
               <i class="fas fa-times"></i> Close
             </button>
