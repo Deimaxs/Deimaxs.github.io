@@ -1,0 +1,24 @@
+Computer vision:
+- Docker
+- GCP
+- Tensorflow
+- OpenCV
+- Dlib
+- FastAPI
+
+OCR
+- Python
+- Google BigQuery
+- Looker Studio
+
+Clustering
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+Clasificacion - Platzi
+- Scikit-learn
+- Imblearn
+- Flask
+- Pickle
