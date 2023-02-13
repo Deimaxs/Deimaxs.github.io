@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400&family=Quicksand:wght@300&family=Roboto&family=Wire+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -30,14 +32,14 @@
 
   <body class="text-slate-200">
     <!-- Hero section -->
-    <section id="Inicio" class="h-screen">
-      <div class="h-screen mx-auto">
+    <section id="Inicio" class="lg:h-screen">
+      <div class="lg:h-screen mx-auto">
         <div
-          class="transition-all duration-1000 transform h-screen bg-bottom pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 relative z-10 bg-cover bg-[url('1.jpg')] hover:bg-[url('1.png')] brigth-50"
+          class="transition-all duration-1000 transform lg:h-screen bg-bottom pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 relative z-10 bg-cover bg-[url('1.jpg')] hover:bg-[url('1.png')] brigth-50"
         >
           <!-- Navigation bar -->
           <div>
-            <div class="ml-0 pl-0 pr-96 pt-6 relative">
+            <div class="ml-0 pl-0 pt-6 relative pr-0 lg:pr-96">
               <nav
                 class="relative flex items-center justify-between pl-4 py-2 lg:justify-start bg-black-transparent-75"
                 aria-label="Global"
@@ -52,135 +54,46 @@
                       <span class="sr-only">Mateo</span>
                       <img alt="Mateo" class="h-14 w-auto" src="logo4.png" />
                     </a>
-                    <div class="-mr-2 flex items-center md:hidden">
-                      <button
-                        type="button"
-                        class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                        aria-expanded="false"
-                      >
-                        <span class="sr-only">Abrir menu principal</span>
-                        <!-- Heroicon name: outline/bars-3 -->
-                        <!-- <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg> -->
-                        <div class="h-6 w-6">
-                          <img class="object-cover" src="logo4.png" alt="" />
-                        </div>
-                      </button>
-                    </div>
                   </div>
                 </div>
                 <div
-                  class="hidden md:ml-16 md:block md:space-x-16 md:pr-4 text-gray-500 font-bold typo-advent text-upper"
+                  class="flex row text-gray-500 font-bold typo-advent text-upper"
                 >
-                  <a href="#Inicio" class="font-medium hover:text-gray-200"
+                  <a href="#Inicio" class="font-medium mx-4 hover:text-gray-200"
                     >Inicio</a
                   >
 
-                  <a href="#about" class="font-medium hover:text-gray-200"
+                  <a href="#about" class="font-medium mx-4 hover:text-gray-200"
                     >Acerca de mi</a
                   >
 
-                  <a href="#experiencia" class="font-medium hover:text-gray-200"
+                  <a href="#experiencia" class="font-medium mx-4 hover:text-gray-200"
                     >Experiencia</a
                   >
 
-                  <a href="#proyectos" class="font-medium hover:text-gray-200"
+                  <a href="#proyectos" class="font-medium mx-4 hover:text-gray-200"
                     >Proyectos</a
                   >
 
                   <a
                     href="#contacto"
-                    class="font-medium text-gray-300 hover:text-gray-100"
+                    class="font-medium mx-4 text-gray-300 hover:text-gray-100"
                     >Contáctame</a
                   >
                 </div>
               </nav>
             </div>
-
-            <!-- Header navigation bar (?)-->
-            <div
-              class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
-            >
-              <div
-                class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5"
-              >
-                <div class="flex items-center justify-between px-5 pt-4">
-                  <div>
-                    <img
-                      class="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                      alt=""
-                    />
-                  </div>
-                  <div class="-mr-2">
-                    <button
-                      type="button"
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                    >
-                      <span class="sr-only">Cerrar menu principal</span>
-                      <!-- Heroicon name: outline/x-mark -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="space-y-1 px-2 pt-2 pb-3">
-                  <a
-                    href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                    >Product</a
-                  >
-
-                  <a
-                    href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                    >Features</a
-                  >
-
-                  <a
-                    href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                    >Marketplace</a
-                  >
-
-                  <a
-                    href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                    >Company</a
-                  >
-                </div>
-                <a
-                  href="#"
-                  class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-blue-600 hover:bg-gray-100"
-                  >Log in</a
-                >
-              </div>
-            </div>
           </div>
 
           <!-- Main title -->
-          <main class="pr-[56%]">
+          <main class="lg:pr-[56%] w-full">
             <div
-              class="bg-black-transparent-75 h-96 lg:mt-20 lg:px-8 md:mt-16 mt-10 mx-auto pt-10 px-4 sm:mt-12 sm:px-6 xl:mt-28 sm:text-center lg:text-left"
+              class="relative bg-black-transparent-75 h-96 lg:mt-20 lg:px-8 md:mt-16 mt-10 mx-auto pt-10 px-4 sm:mt-12 sm:px-6 xl:mt-28 sm:text-center lg:text-left"
             >
               <h1
                 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
               >
-                <span class="block xl:inline text-white">Hola! Soy </span>
+                <span class="block xl:inline text-white">¡Hola! Soy </span>
                 <span class="block text-cyan-800 xl:inline typo-advent"
                   >Mateo</span
                 >
@@ -190,22 +103,24 @@
               >
                 Y este es mi portafolio.
               </p>
-              <!-- <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                        <div class="rounded-md shadow">
-                            <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:py-4 md:px-10 md:text-lg">Get started</a>
-                        </div>
-                        <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-100 px-8 py-3 text-base font-medium text-blue-700 hover:bg-blue-200 md:py-4 md:px-10 md:text-lg">Live demo</a>
-                        </div>
-                    </div> -->
+              <div class="absolute mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end inset-x-0 bottom-0">
+                  <div class="rounded-md shadow">
+                      <a href="https://github.com/Deimaxs" target="_blank" class="flex w-full items-center justify-center py-3 text-base font-medium text-white md:py-4 lg:px-4 md:text-lg"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="https://www.linkedin.com/in/mateo-sanchez-ds/" target="_blank" class="flex w-full items-center justify-center py-3 text-base font-medium text-white md:py-4 lg:px-4 md:text-lg"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                  <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="mailto:mateosanalzate@gmail.com" target="_blank" class="flex w-full items-center justify-center py-3 text-base font-medium text-white md:py-4 lg:px-4 md:text-lg"><i class="bi bi-envelope"></i></a>
+                  </div>
+                  <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="https://wa.me/34624890494" target="_blank" class="flex w-full items-center justify-center py-3 text-base font-medium text-white md:py-4 lg:px-4 md:text-lg lg:pr-6"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+              </div>
             </div>
           </main>
         </div>
       </div>
-      <!-- second image -->
-      <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src="1.jpg" alt="">
-        </div> -->
     </section>
 
     <section id="about" class="h-84 typo-quicksand bg-neutral-900">
@@ -344,22 +259,14 @@
       <div>
         <div class="grid grid-rows-2 grid-cols-3 gap-8 p-10">
           <div class="relative">
-            <div
-              class="image-overlay-container h-80 w-80 cursor-hand"
-              onclick="toggleModal('modal_vision')"
-            >
-              <img
-                src="imagenes/vision1.PNG"
-                alt="Avatar"
-                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
-                style="width: 100%"
-              />
+            <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_vision')">
+              <img src="imagenes/vision1.PNG" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width: 100%">
               <div class="image-overlay-middle w-11/12 h-5/6">
                 <div class="image-overlay-text">
                   <p class="text-zinc-200 font-bold">
                     Conteo y seguimiento de objetos con visión artificial.
                   </p>
-                  <br />
+                  <br>
                   <ul class="text-zinc-300 font-bold">
                     <li>Docker</li>
                     <li>GCP</li>
@@ -373,23 +280,15 @@
             </div>
           </div>
           <div class="relative">
-            <div
-              class="image-overlay-container h-80 w-80 cursor-hand"
-              onclick="toggleModal('modal_ocr')"
-            >
-              <img
-                src="imagenes/OCR2.PNG"
-                alt="Avatar"
-                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
-                style="width: 100%"
-              />
+            <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_ocr')">
+              <img src="imagenes/OCR2.PNG" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width: 100%">
               <div class="image-overlay-middle w-11/12 h-5/6">
                 <div class="image-overlay-text">
                   <p class="text-zinc-200 font-bold">
                     OCR con comunicación a la base de datos y presentación de
                     resultados.
                   </p>
-                  <br />
+                  <br>
                   <!-- <p class="text-white text-sm tracking-tight"> -->
                   <ul class="text-zinc-300 font-bold tracking-tight">
                     <li>Python</li>
@@ -402,22 +301,14 @@
             </div>
           </div>
           <div class="relative">
-            <div
-              class="image-overlay-container h-80 w-80 cursor-hand"
-              onclick="toggleModal('modal_cluster')"
-            >
-              <img
-                src="imagenes/cluster.JPG"
-                alt="Avatar"
-                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
-                style="width: 100%"
-              />
+            <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_cluster')">
+              <img src="imagenes/cluster.JPG" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width: 100%">
               <div class="image-overlay-middle w-11/12 h-5/6">
                 <div class="image-overlay-text">
                   <p class="text-zinc-200 font-bold">
                     Análisis de anomalías por medio de clustering.
                   </p>
-                  <br />
+                  <br>
                   <!-- <p class="text-white text-sm tracking-tight"> -->
                   <ul class="text-zinc-300 font-bold">
                     <li>Pandas</li>
@@ -431,23 +322,15 @@
             </div>
           </div>
           <div class="relative">
-            <div
-              class="image-overlay-container h-80 w-80 cursor-hand"
-              onclick="toggleModal('modal_clasification')"
-            >
-              <img
-                src="imagenes/clasification.png"
-                alt="Avatar"
-                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
-                style="width: 100%"
-              />
+            <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_clasification')">
+              <img src="imagenes/clasification.png" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width: 100%">
               <div class="image-overlay-middle w-11/12 h-5/6">
                 <div class="image-overlay-text">
                   <p class="text-zinc-200 font-bold">
                     Generación de modelos de clasificación en aprendizaje
                     supervisado.
                   </p>
-                  <br />
+                  <br>
                   <!-- <p class="text-white text-sm tracking-tight"> -->
                   <ul class="text-zinc-300 font-bold">
                     <li>Scikit-Learn</li>
@@ -461,22 +344,14 @@
             </div>
           </div>
           <div class="relative">
-            <div
-              class="image-overlay-container h-80 w-80 cursor-hand"
-              onclick="toggleModal('modal_bi')"
-            >
-              <img
-                src="imagenes/bi.jpeg"
-                alt="Avatar"
-                class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80"
-                style="width: 100%"
-              />
+            <div class="image-overlay-container h-80 w-80 cursor-hand" onclick="toggleModal('modal_bi')">
+              <img src="imagenes/bi.jpeg" alt="Avatar" class="absolute bg-center bg-cover flex h-80 image-overlay-image w-80" style="width: 100%">
               <div class="image-overlay-middle w-11/12 h-5/6">
                 <div class="image-overlay-text">
                   <p class="text-zinc-200 font-bold">
                     BI competición kaggle.
                   </p>
-                  <br />
+                  <br>
                   <!-- <p class="text-white text-sm tracking-tight"> -->
                   <ul class="text-zinc-300 font-bold">
                     <li>Pandas</li>
@@ -492,7 +367,7 @@
       </div>
     </section>
 
-    <section id="contacto" class="bg-neutral-900">
+    <!-- <section id="contacto" class="bg-neutral-900">
       <h2 class="section-title typo-quicksand text-center text-3xl pt-14">
         Contáctame ^^
       </h2>
@@ -534,7 +409,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Modals -->
     <div
@@ -996,6 +871,7 @@
           aria-modal="true"
           aria-labelledby="modal-headline"
         >
+        <!-- max-w-full ^ -->
           <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex">
             <video
               width="640"
@@ -1003,9 +879,13 @@
               class="w-1/2 h-3/4 self-auto"
               controls
             >
+            <!-- width="100%   ^ "
+            height="auto"
+            class="w-full h-auto self-auto" -->
               <source src="video2.mp4" />
             </video>
             <div class="pl-16 w-1/2 text-gray-800 text-justify">
+              <!--            w-full ^ -->
               <p class="text-gray-500 text-center text-xl font-bold">
                 BI competición kaggle
               </p>
