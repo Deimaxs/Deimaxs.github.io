@@ -24,25 +24,3 @@ function scrollToTop() {
 function toggleModal(modal_id) {
   document.getElementById(modal_id).classList.toggle("hidden");
 }
-
-function sendMail() {
-  nombre = $("#form-nombre").val();
-  asunto = $("#form-asunto").val();
-  mensaje = $("#form-mensaje").val();
-  email = $("#form-email").val();
-
-  $.ajax({
-    url: 'http://3.237.199.101/mail/mTemplate',
-    method: 'GET',
-    data: {
-      nombre: nombre,
-      asunto: asunto,
-      mensaje: mensaje,
-      email: email,
-    }
-  }).done(function(res){
-    //
-  }).fail( function( jqXHR, textStatus, errorThrown ) {
-    console.log(jqXHR.responseText + "   -   " + errorThrown);
-  });
-}
